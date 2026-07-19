@@ -215,13 +215,21 @@
     </style>
 </head>
 <body>
+    <style>
+@keyframes blinkDot {
+  0%,100% { opacity:1; }
+  50% { opacity:0.2; }
+}
+</style>
+
 <span style="display:inline-block;padding:12px 20px;background:linear-gradient(135deg,#2563eb,#1d4ed8);border-radius:12px;color:#fff;font-family:Arial,sans-serif;font-size:16px;font-weight:500;box-shadow:0 6px 18px rgba(37,99,235,.25);line-height:1.7;">
     📚 <span style="color:#FFD54F;font-size:20px;font-weight:800;text-transform:uppercase;">Rabindra Sahani</span>
     <br>
     <span style="font-size:15px;">Complete Lesson Notes</span>
     <br>
     <span style="font-size:13px;color:#E5E7EB;">
-        🌐 Visit:
+        <span style="display:inline-block;width:10px;height:10px;background:#00ff55;border-radius:50%;margin-right:6px;animation:blinkDot 1s infinite;"></span>
+        Visit:
         <a href="https://skylersage.blogspot.com" target="_blank" style="color:#FFFFFF;font-weight:700;text-decoration:none;">
             Rabindra
         </a>
