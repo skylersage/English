@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+    <title>Complete Lesson Notes – All Sections</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+            background: #f2f5f9;
+            padding: 2rem 1.5rem;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.18);
+            padding: 2.5rem 2.8rem;
+        }
+        h1 {
+            font-size: 2.2rem;
+            letter-spacing: -0.5px;
+            border-bottom: 4px solid #2d7a9b;
+            padding-bottom: 0.6rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        h1 small {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #3e5c6b;
+            margin-left: auto;
+            background: #eef2f6;
+            padding: 0.2rem 1.2rem;
+            border-radius: 40px;
+        }
+        .section-block {
+            margin: 2.8rem 0 1.2rem 0;
+            padding-top: 1rem;
+            border-top: 2px dashed #d0d9e0;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1a3f4f;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1.8rem;
+            flex-wrap: wrap;
+        }
+        .section-title span {
+            background: #1a3f4f;
+            color: white;
+            font-size: 1rem;
+            padding: 0.2rem 1.2rem;
+            border-radius: 40px;
+            font-weight: 400;
+        }
+        .lesson-card {
+            background: #fbfdff;
+            border-left: 5px solid #b6ccd8;
+            padding: 1rem 1.8rem 1.2rem 1.8rem;
+            margin-bottom: 1.8rem;
+            border-radius: 0 16px 16px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+        }
+        .lesson-card:hover {
+            background: #f5f9fe;
+            border-left-color: #2d7a9b;
+        }
+        .lesson-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.6rem 1.2rem;
+            margin-bottom: 0.4rem;
+        }
+        .lesson-number {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #1e4a5e;
+            background: #e6edf3;
+            padding: 0.1rem 0.8rem;
+            border-radius: 30px;
+        }
+        .lesson-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #0b2b38;
+        }
+        .lesson-writer {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #316279;
+            background: #e1ecf3;
+            padding: 0.1rem 1rem;
+            border-radius: 30px;
+            margin-left: auto;
+        }
+        .lesson-body {
+            margin-top: 0.5rem;
+            padding-left: 0.2rem;
+        }
+        .about-writer {
+            margin: 0.3rem 0 0.5rem 0;
+            color: #1d4b60;
+        }
+        .about-writer strong {
+            color: #0c2b38;
+            background: #e0ecf3;
+            padding: 0.1rem 0.6rem;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        .main-idea {
+            font-weight: 500;
+            margin: 0.5rem 0 0.3rem 0;
+            color: #0f3a4b;
+        }
+        .main-idea strong {
+            color: #0c2b38;
+            background: #e0ecf3;
+            padding: 0.1rem 0.6rem;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        .key-points {
+            margin: 0.3rem 0 0 1.2rem;
+            padding-left: 0.2rem;
+            list-style-type: none;
+        }
+        .key-points li {
+            position: relative;
+            padding-left: 1.4rem;
+            margin-bottom: 0.2rem;
+        }
+        .key-points li::before {
+            content: "◆";
+            position: absolute;
+            left: 0;
+            color: #2d7a9b;
+            font-size: 0.9rem;
+        }
+
+        /* NEW MORAL SECTION STYLES */
+        .moral {
+            margin: 0.7rem 0 0.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #eef7fb;
+            border-radius: 12px;
+            border-left: 5px solid #1f6d8a;
+            color: #0b2b38;
+        }
+        .moral strong {
+            color: #0c2b38;
+            background: #d4e4ee;
+            padding: 0.1rem 0.6rem;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-right: 4px;
+        }
+
+        .footer-note {
+            margin-top: 2.5rem;
+            font-size: 0.9rem;
+            color: #46687a;
+            text-align: right;
+            border-top: 1px solid #dde6ed;
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: #dce8f0;
+            padding: 0.2rem 0.9rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #1a4052;
+        }
+        @media (max-width: 720px) {
+            body {
+                padding: 0.8rem;
+            }
+            .container {
+                padding: 1.5rem 1.2rem;
+            }
+            .lesson-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .lesson-writer {
+                margin-left: 0;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<span style="display:inline-block;padding:12px 20px;background:linear-gradient(135deg,#2563eb,#1d4ed8);border-radius:12px;color:#fff;font-family:Arial,sans-serif;font-size:16px;font-weight:500;box-shadow:0 6px 18px rgba(37,99,235,.25);line-height:1.7;">
+    📚 <span style="color:#FFD54F;font-size:20px;font-weight:800;text-transform:uppercase;">Rabindra Sahani</span>
+    <br>
+    <span style="font-size:15px;">Complete Lesson Notes</span>
+    <br>
+    <span style="font-size:13px;color:#E5E7EB;">
+        🌐 Visit:
+        <a href="https://skylersage.blogspot.com" target="_blank" style="color:#FFFFFF;font-weight:700;text-decoration:none;">
+            Rabindra
+        </a>
+        | Free Study Notes • Online Tools • Quiz
+    </span>
+</span>
+<div class="container">
+
+    <h1>
+        📖 Complete Lesson Notes
+        <small>6 sections · 43 lessons</small>
+    </h1>
+
+    <!-- ============================================================ -->
+    <!-- CULTURE AND SOCIETY (1-7) -->
+    <!-- ============================================================ -->
+    <div class="section-block">
+        <div class="section-title">🏛️ Culture and Society <span>1-7</span></div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">1</span>
+                <span class="lesson-title">New Nepal</span>
+                <span class="lesson-writer">Siddhicharan Shrestha</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Siddhicharan Shrestha was a famous and highly respected poet from Nepal. People call him the "Yug Kavi" (Poet of the Era) because his writings inspired political change and social awakening.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> A patriotic call to reject old, unfair traditions and poverty to build a united, fair, and bright future for the country.</div>
+                <ul class="key-points">
+                    <li>Forget the dark past and focus on a bright future.</li>
+                    <li>Throw away social injustice and old habits.</li>
+                    <li>Call for strong unity, courage, and hard work among all Nepali people.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>True progress comes when we stay united, drop old and unfair customs, and work hard together to make our country a better place.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">2</span>
+                <span class="lesson-title">Looking for a Rain God</span>
+                <span class="lesson-writer">Bessie Head</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Bessie Head was an important writer from South Africa. She mostly wrote about the difficult lives of rural people, village culture, and the struggles of women in Africa.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> Shows how extreme starvation and a long drought push a family to sacrifice two young girls out of desperation and old superstition.</div>
+                <ul class="key-points">
+                    <li>Seven years of terrible drought bring starvation to a village.</li>
+                    <li>The family becomes desperate and sacrifices two young girls for rain.</li>
+                    <li>Rain does not fall, the secret comes out, and the parents face execution.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>Blind superstition and panic during hard times lead to terrible tragedy. We must use logic and protect human lives above all else.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">3</span>
+                <span class="lesson-title">Dover Beach</span>
+                <span class="lesson-writer">Matthew Arnold</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Matthew Arnold was a famous English poet and critic from the Victorian era. He often wrote about sadness, change, and how modern science was replacing traditional faith.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> Expresses deep sadness over the loss of religious faith in the modern world, stating that only human love can save us from the chaos.</div>
+                <ul class="key-points">
+                    <li>The poet looks at the calm sea but hears the sad sound of pebbles moving.</li>
+                    <li>Faith in the world is drying up like an ocean tide.</li>
+                    <li>Human love is the only true shield left against a confusing, violent world.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>As the modern world becomes more stressful and loses its faith, true human love is the only real comfort and shield we have.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">4</span>
+                <span class="lesson-title">Shooting an Elephant</span>
+                <span class="lesson-writer">George Orwell</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> George Orwell was a very famous English novelist and journalist. He is well-known for writing against unfair government control and European imperialism (colonialism).</div>
+                <div class="main-idea"><strong>Main Idea:</strong> Explores how colonialism harms both the ruled and the rulers, showing how a police officer is forced to kill an animal just to avoid looking fool.</div>
+                <ul class="key-points">
+                    <li>A British police officer in Burma must handle a wild elephant.</li>
+                    <li>He does not want to kill the animal because it is no longer dangerous.</li>
+                    <li>He shoots it anyway just to protect his pride and satisfy the pressuring crowd.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>Unfairly ruling over others destroys your own freedom. It forces you to do bad things just to look strong and please the crowd.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">5</span>
+                <span class="lesson-title">The Unknown Citizen</span>
+                <span class="lesson-writer">W.H. Auden</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> W.H. Auden was an influential British-American poet. He was famous for writing about politics, modern society, and psychological issues.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> A satire mocking modern states that treat people like statistical numbers, tracking their purchases but ignoring their true happiness.</div>
+                <ul class="key-points">
+                    <li>A monument is built for a man known only by numbers and letters.</li>
+                    <li>He always paid his taxes, bought a TV, and never argued with his bosses.</li>
+                    <li>The state assumes he was happy because he fit perfectly into their system.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>A person's life cannot be measured just by receipts, taxes, and data. True happiness and personal freedom are what actually matter.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">6</span>
+                <span class="lesson-title">Augustus Does His Bit</span>
+                <span class="lesson-writer">George Bernard Shaw</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> George Bernard Shaw was a world-famous Irish playwright and comic writer. He won a Nobel Prize and loved to mock social classes and government foolishness.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> A comedy mocking the laziness, pride, and stupidity of high-class government officials during wartime.</div>
+                <ul class="key-points">
+                    <li>Lord Augustus is an aristocratic official who thinks he is a hero.</li>
+                    <li>A female spy disguised as a lady visits his office.</li>
+                    <li>She easily tricks him and steals a secret list of military bases.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Proud and lazy government workers can harm a nation during emergencies. Real duty requires focus, not just high social status.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">7</span>
+                <span class="lesson-title">The Parrot in the Cage</span>
+                <span class="lesson-writer">Lekhnath Paudyal</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Lekhnath Paudyal was a founding figure of modern Nepali literature. He is widely known as the "Kavi Shiromani" (Jewel Among Poets) of Nepal.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> Uses a trapped bird as a powerful symbol to highlight human suffering and the loss of personal freedom under a cruel government.</div>
+                <ul class="key-points">
+                    <li>A beautiful parrot is locked inside a tight cage.</li>
+                    <li>It remembers its free life in the green forest with its parents.</li>
+                    <li>It cries out against its cruel human master and prays to God for death or freedom.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Freedom is the most beautiful and natural gift for every living being. Keeping anyone trapped or enslaved is a cruel sin.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- MONEY AND MANAGEMENT (8-12) -->
+    <!-- ============================================================ -->
+    <div class="section-block">
+        <div class="section-title">💰 Money and Management <span>8-12</span></div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">8</span>
+                <span class="lesson-title">Advertise Your Business</span>
+                <span class="lesson-writer">Phineas T. Barnum</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Phineas T. Barnum (P.T. Barnum) was a famous American businessman and showman. He is known as a master of marketing and advertising.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> Advertising is the most critical tool for business success, as having a good product means nothing if the world does not know it exists.</div>
+                <ul class="key-points">
+                    <li>Having a good product is not enough; people must know it exists.</li>
+                    <li>Advertising must be continuous, creative, and catch people's attention.</li>
+                    <li>Spending money on good advertising is an investment that brings huge profits.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Success in business requires both a great product and continuous, energetic advertising so the public actually knows it exists.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">9</span>
+                <span class="lesson-title">Eveline</span>
+                <span class="lesson-writer">James Joyce</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> James Joyce was a highly influential Irish novelist and short-story writer. He is famous for writing about the mental struggles and daily lives of ordinary people in Dublin.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> Looks at the difficult mental conflict between family duty, financial struggle, and the fear of escaping to a completely new life.</div>
+                <ul class="key-points">
+                    <li>Eveline works a hard, low-paying job and looks after her abusive father.</li>
+                    <li>Her lover, Frank, offers to take her away to Buenos Aires for a better life.</li>
+                    <li>At the station, fear paralyzes her, and she chooses to stay behind.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>Staying trapped in a bad situation because of fear of change or past guilt will stop you from living a happy and free life. </div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">10</span>
+                <span class="lesson-title">The Company Man</span>
+                <span class="lesson-writer">Ellen Goodman</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Ellen Goodman is an American journalist and writer. She won a Pulitzer Prize for her columns that look closely at modern life, family, and work culture.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> A critical look at workaholics who sacrifice health, hobbies, and family relationships for a job that replaces them instantly upon death.</div>
+                <ul class="key-points">
+                    <li>Phil is a dedicated corporate manager who works six days a week.</li>
+                    <li>He has no hobbies, a broken relationship with his kids, and dies of a heart attack.</li>
+                    <li>Immediately after his death, the company replaces him without caring about his sacrifice.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Life needs balance. If you sacrifice your health and family for work, your company will replace you the day after you die.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">11</span>
+                <span class="lesson-title">Light My Lucky</span>
+                <span class="lesson-writer">R. Scholes, N.R. Comley & G.L. Ulmer</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> R. Scholes, N.R. Comley, and G.L. Ulmer are American professors and researchers who study media, culture, and text analysis.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> Analyzes the psychological tricks used in advertisements to link harmful products like cigarettes with false ideas of independence and coolness.</div>
+                <ul class="key-points">
+                    <li>Large tobacco companies target young people's emotions and insecurities.</li>
+                    <li>Ads link smoking with romance, adventure, independence, and strength.</li>
+                    <li>Customers are brainwashed into buying harmful products based on these fake images.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> We must think smartly when looking at advertisements. Companies use fake images of cool lifestyles just to sell harmful products.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">12</span>
+                <span class="lesson-title">The Ideal of Craftsmanship</span>
+                <span class="lesson-writer">C. Wright Mills</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> C. Wright Mills was an important American sociologist and professor. He wrote extensively about social classes, power, and the changing nature of modern work.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> True craftsmanship means doing work out of pure love, joy, and pride for the creation, rather than just doing a job for quick money.</div>
+                <ul class="key-points">
+                    <li>True craftsmanship means the worker controls their own work.</li>
+                    <li>The process of making something is just as rewarding as the money earned.</li>
+                    <li>Modern factory and office jobs often destroy this joy, turning people into bored robots.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Work is most satisfying when you do it out of love, pride, and interest, rather than just doing it to chase quick money.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SCIENCE AND ENVIRONMENT (13-19) -->
+    <!-- ============================================================ -->
+    <div class="section-block">
+        <div class="section-title">🌿 Science and Environment <span>13-19</span></div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">13</span>
+                <span class="lesson-title">Religion and Science</span>
+                <span class="lesson-writer">Alfred North Whitehead</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Alfred North Whitehead was a famous English mathematician and philosopher. He spent his life studying how science, religion, and logic fit together in human history.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> Explains that science and religion are not enemies; they are both forces that must respect and balance each other for human progress.</div>
+                <ul class="key-points">
+                    <li>Science focuses on the physical world, while religion focuses on internal, spiritual values.</li>
+                    <li>Conflicts happen because both fields are constantly growing and changing over time.</li>
+                    <li>Instead of fighting, they should balance each other to help humanity grow.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>Humanity needs both science for physical comfort and religion for spiritual values. They must work together to create harmony.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">14</span>
+                <span class="lesson-title">The New Physics</span>
+                <span class="lesson-writer">Fritjof Capra</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Fritjof Capra is an Austrian-American physicist and author. He is world-famous for showing the deep connections between modern science and ancient Eastern philosophies.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> Modern physics shows that the universe is not a machine made of separate parts, but a deeply connected, living web of energy.</div>
+                <ul class="key-points">
+                    <li>Old physics viewed the universe as a mechanical clock made of separate parts.</li>
+                    <li>New physics proves that all matter and energy are deeply linked together.</li>
+                    <li>This scientific view matches ancient mystical ideas about the oneness of nature.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>Everything in nature is connected like a giant web. We must care for our environment because what happens to one part affects us all. </div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">15</span>
+                <span class="lesson-title">Root Cellar</span>
+                <span class="lesson-writer">Theodore Roethke</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Theodore Roethke was a highly celebrated American poet. He grew up around his father's commercial greenhouses, which gave him a deep love and understanding of nature.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> Celebrates the fierce and stubborn power of nature to survive, break through, and grow even in dark, muddy, and damp underground places.</div>
+                <ul class="key-points">
+                    <li>The root cellar is described as a dark, muddy, and stinking underground room.</li>
+                    <li>Despite the dirt and darkness, bulbs, shoots, and roots break out and grow.</li>
+                    <li>The poem stands as a powerful symbol of life's determination to survive anywhere.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>Life is incredibly tough and stubborn. No matter how dark or difficult the environment is, the instinct to survive will always find a way. </div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">16</span>
+                <span class="lesson-title">On Warts</span>
+                <span class="lesson-writer">Lewis Thomas</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Lewis Thomas was an American physician, scientist, and essayist. He was famous for writing about complex biology topics using clear, beautiful, and poetic language.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> Uses skin warts to show the mysterious power of our subconscious mind, which can trigger our immune system to cure illnesses naturally.</div>
+                <ul class="key-points">
+                    <li>Warts are caused by viruses but can magically disappear through psychological tricks (like "buying" them away).</li>
+                    <li>This proves that our subconscious mind has a hidden, powerful control over our physical health.</li>
+                    <li>Nature and biology are full of wonderful mysteries that science still cannot fully explain.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> The human body and mind have amazing, hidden powers to heal themselves. Nature holds mysteries that science cannot fully explain yet.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">17</span>
+                <span class="lesson-title">The Etiquette of Freedom</span>
+                <span class="lesson-writer">Gary Snyder</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Gary Snyder is an American poet, environmentalist, and essayist. He is often called the "poet laureate of deep ecology" because of his close relationship with the natural world.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> Explores freedom through the concept of the wild, showing that humans must learn the proper manners to live peacefully inside nature's laws.</div>
+                <ul class="key-points">
+                    <li>"Wild" means something that is free, self-born, and independent of human control.</li>
+                    <li>"Nature" is our home, and it includes everything from rocks to human cities.</li>
+                    <li>To be truly free, humans must learn the proper manners (etiquette) to live peacefully with wild nature.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>True freedom means respecting the natural laws of the wild. Humans are not the bosses of nature; we are just a tiny part of it. </div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">18</span>
+                <span class="lesson-title">Just Like George Bernard Shaw</span>
+                <span class="lesson-writer">James Herriot</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> James Herriot was the pen name of James Alfred Wight, a beloved British veterinary surgeon and writer. He wrote heartwarming stories based on his real experiences treating animals in Yorkshire.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> A heartwarming story that highlights the deep emotional bond between humans and animals, set in a proud, stubborn rural community.</div>
+                <ul class="key-points">
+                    <li>A country vet visits an old, stubborn man and his sickly pet.</li>
+                    <li>The story captures the humorous clashes and warm relationships in a rural farming community.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Caring for animals brings people together. Showing love and kindness to pets makes human lives and communities much warmer.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">19</span>
+                <span class="lesson-title">The Rights of Animals</span>
+                <span class="lesson-writer">Brigid Brophy</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Brigid Brophy was a British novelist, critic, and fierce champion for social justice. She was one of the earliest and most important voices in the modern animal rights movement.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The essay argues that humans are hypocrites when it comes to treating animals. Brophy states that animals feel pain, fear, and love just like humans do, and it is completely immoral to torture, hunt, or eat them for our own pleasure or profit.</div>
+                <ul class="key-points">
+                    <li>Humans treat animals as items or property rather than living, feeling beings.</li>
+                    <li>Just because animals cannot speak human language does not mean they lack rights.</li>
+                    <li>We must extend our moral laws against murder and cruelty to include the animal kingdom.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Animals feel pain, fear, and love just like humans do. It is wrong to hurt or mistreat them just for our own taste or profit.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- GENDER AND WOMEN (20-27) -->
+    <!-- ============================================================ -->
+    <div class="section-block">
+        <div class="section-title">⚧️ Gender and Women <span>20-27</span></div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">20</span>
+                <span class="lesson-title">Professions for Women</span>
+                <span class="lesson-writer">Virginia Woolf</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Virginia Woolf was a highly famous English writer and a pioneer of modern feminist literature. She wrote extensively about the social and mental barriers faced by women.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The essay discusses the mental hurdles women must overcome to succeed in professional fields. Woolf explains that women must "kill" the traditional image of the perfect, self-sacrificing housewife (which she calls "The Angel in the House") to speak and write with true freedom.</div>
+                <ul class="key-points">
+                    <li>Women face inner psychological ghosts even after gaining professional jobs.</li>
+                    <li>The "Angel in the House" is the voice telling women to be purely passive, charming, and selfless.</li>
+                    <li>True career freedom requires women to destroy these old social expectations and express their raw minds.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> To succeed in their careers, women must break free from old mental traps and societal voices that tell them to always be quiet and passive.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">21</span>
+                <span class="lesson-title">The Use of Force</span>
+                <span class="lesson-writer">William Carlos Williams</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> William Carlos Williams was an important American poet and a real-life medical doctor. He wrote stories that captured the raw, complicated truths of human nature and medical practice.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The story looks at the hidden darkness, power struggles, and loss of control within human beings. A doctor uses physical power to force open a young girl's mouth for a necessary medical checkup, revealing how easily good intentions can turn into a violent desire to win.</div>
+                <ul class="key-points">
+                    <li>A young girl is sick with a deadly disease but fiercely refuses a throat exam.</li>
+                    <li>The doctor and parents use physical force to hold her down.</li>
+                    <li>The doctor realizes he is no longer acting out of duty, but out of a blind, furious urge to dominate the child.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> It is dangerous when the urge to win takes over your mind. Even with good intentions, using force can easily turn into blind cruelty.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">22</span>
+                <span class="lesson-title">The Stronger</span>
+                <span class="lesson-writer">August Strindberg</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> August Strindberg was a famous Swedish playwright and author. He was a master of psychological drama, focusing on intense human relationships and power battles.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> This short play explores jealousy, silent power, and the complex psychological battles between women. Through a conversation where only one person speaks, it raises the question of who is truly stronger: the married woman who has the social status, or the silent mistress who controls the husband's mind.</div>
+                <ul class="key-points">
+                    <li>Two actresses meet at a cafe on Christmas Eve; Mrs. X speaks while Miss Y stays completely silent.</li>
+                    <li>Mrs. X realizes Miss Y had an affair with her husband and shaped his tastes.</li>
+                    <li>Mrs. X claims victory because she kept her family, leaving the viewer to wonder who truly won.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> True strength is not about who talks the loudest or who has the best status. Power in relationships is deep, silent, and psychological.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">23</span>
+                <span class="lesson-title">Here I Love You</span>
+                <span class="lesson-writer">Pablo Neruda</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Pablo Neruda was a world-famous Chilean poet who won the Nobel Prize in Literature. He is legendary for writing some of the most beautiful and passionate love poems in history.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The poem captures the deep pain of loneliness, longing, and distant love. The speaker expresses his intense emotions for a woman while sitting alone by a dark, cold ocean shore, showing how love persists even when the other person is far away.</div>
+                <ul class="key-points">
+                    <li>The setting is a lonely, windy, and dark coastal environment.</li>
+                    <li>The poet feels isolated as everything around him reminds him of his distant love.</li>
+                    <li>Despite the distance and the cold world, his love remains steady and unchanging.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>Distance and physical isolation cannot break real love. True feelings stay strong and steady even when the world feels cold and lonely. </div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">24</span>
+                <span class="lesson-title">The Kiss</span>
+                <span class="lesson-writer">Kate Chopin</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Kate Chopin was a groundbreaking American author. She is famous for writing about women's inner desires, marital struggles, and their search for independence in the late 1800s.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The story highlights how women were forced to choose financial security over romantic passion due to old social structures. A woman plots to marry a wealthy, boring man while secretly hoping to keep her handsome, passionate lover on the side, but her plan falls apart.</div>
+                <ul class="key-points">
+                    <li>Nathalie wants to marry a wealthy but foolish man named Brantain for his money.</li>
+                    <li>Her handsome friend Harvey kisses her unexpectedly, which Brantain sees.</li>
+                    <li>She smooths things over to secure her wealthy marriage, but loses Harvey's affection in the end.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> If you trade true romantic passion for money and social status, you will end up financially secure but emotionally empty.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">25</span>
+                <span class="lesson-title">Girl</span>
+                <span class="lesson-writer">Jamaica Kincaid</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Jamaica Kincaid is an Antiguan-American novelist and essayist. Her writings frequently explore mother-daughter bonds, traditional gender roles, and post-colonial life.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The short piece is a continuous list of strict instructions given by a mother to her young daughter. It shows how traditional societies heavily pressure young girls to behave perfectly, cook, clean, and protect their reputations so they do not become "outcasts."</div>
+                <ul class="key-points">
+                    <li>A mother delivers a nonstop stream of advice on household chores and public behavior.</li>
+                    <li>The instructions are strict and leave no room for the girl's individual freedom.</li>
+                    <li>The underlying message is that a woman's entire worth relies on her domestic skills and social reputation.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Forcing young girls to follow endless, strict rules damages their individual freedom and reduces their worth to simple household chores.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">26</span>
+                <span class="lesson-title">Farewell</span>
+                <span class="lesson-writer">Federico García Lorca</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Federico García Lorca was a highly influential Spanish poet and playwright. He was famous for his deeply emotional, symbolic, and musical poems about life, death, and Spanish culture.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> This very short poem expresses a peaceful acceptance of death and a desire to remain connected to the natural world. The speaker asks that their window be left open after death so they can still hear the living world outside.</div>
+                <ul class="key-points">
+                    <li>The speaker explicitly states, "If I die, leave the balcony open."</li>
+                    <li>A young boy eating oranges and a reaper cutting wheat can be heard outside.</li>
+                    <li>The poem shows that death is natural, and the soul wishes to stay near the joyful sounds of daily life.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Death is a natural part of life that we must accept calmly. Even when we leave, the beautiful sounds of the world will keep going.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">27</span>
+                <span class="lesson-title">Popular Mechanics</span>
+                <span class="lesson-writer">Raymond Carver</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Raymond Carver was a celebrated American short-story writer. He was famous for a style called "minimalism"—using very few, simple words to describe intense and dark human conflicts.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The story shows the sudden, violent breakdown of a relationship and how children become the innocent victims of parental fights. A separating couple gets into a fierce physical argument over who gets to keep their baby, treating the infant like a prize to be won rather than a living being.</div>
+                <ul class="key-points">
+                    <li>A man is packing his bags to leave his partner on a dark, snowy day.</li>
+                    <li>An argument starts over who gets to take custody of their baby.</li>
+                    <li>They engage in a literal tug-of-war with the infant, ending in a chilling, sudden disaster.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> When a relationship breaks down into anger and greed, innocent children are the ones who suffer the most from the parents' fighting.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- LIFE, DEATH AND BEYOND (28-33) -->
+    <!-- ============================================================ -->
+    <div class="section-block">
+        <div class="section-title">🌌 Life, Death and Beyond <span>28-33</span></div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">28</span>
+                <span class="lesson-title">The Fly</span>
+                <span class="lesson-writer">William Blake</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> William Blake was a famous English poet, painter, and visionary from the Romantic era. He wrote deeply spiritual poems about nature, innocence, and human existence.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The poem compares the short life of a tiny fly to the life of a human being. It shows that both humans and insects are fragile, powerless creatures controlled by a higher fate, and both will face death eventually.</div>
+                <ul class="key-points">
+                    <li>The poet accidentally brushes away a little fly.</li>
+                    <li>He realizes he is just like the fly: dancing, drinking, and living until a blind hand brushes him away too.</li>
+                    <li>Life is linked to thought, strength, and breath, while death is just the end of these things.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>All lives, big or small, are fragile and short. We should respect every tiny creature because we all face the same ultimate fate. </div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">29</span>
+                <span class="lesson-title">Jest and Earnest</span>
+                <span class="lesson-writer">Annie Dillard</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Annie Dillard is a celebrated American author. She is well-known for her beautiful, detailed essays about nature, spirituality, and the mysteries of the physical universe.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The text looks at the strange, beautiful, and sometimes cruel realities of nature. Dillard shows that the universe is full of mysteries that are both funny (jest) and deeply serious (earnest), and humans must accept this wild design.</div>
+                <ul class="key-points">
+                    <li>The author watches the behavior of wild animals, like a mangrove tree or a predatory insect.</li>
+                    <li>Nature seems to create life with incredible variety but treats individual lives with total indifference.</li>
+                    <li>The essay challenges us to find meaning in a world that feels both playful and terrifying.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Nature is both beautiful and terrifyingly indifferent. We must accept its wild design and find our own meaning within it.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">30</span>
+                <span class="lesson-title">The Old Man at the Bridge</span>
+                <span class="lesson-writer">Ernest Hemingway</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Ernest Hemingway was a highly famous American novelist and journalist who won the Nobel Prize. He was known for his short, direct writing style and stories about war and courage.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The story shows how devastating war is for innocent, ordinary citizens who have nothing to do with politics. An old man is forced to leave his hometown and his beloved animals because of an advancing army, leaving him completely helpless and heartbroken.</div>
+                <ul class="key-points">
+                    <li>An old, exhausted man sits by a bridge during the Spanish Civil War while refugees flee.</li>
+                    <li>A soldier tells him to move, but the old man is too tired and only worries about the goats, cat, and birds he left behind.</li>
+                    <li>The story ends sadly, showing that the old man has no future and will likely die by the bridge.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> War is cruel because it destroys the peaceful lives of innocent citizens who have absolutely nothing to do with politics.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">31</span>
+                <span class="lesson-title">Once More to the Lake</span>
+                <span class="lesson-writer">E.B. White</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> E.B. White was a brilliant American essayist and author, famous for writing classic children's books like Charlotte's Web.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The essay reflects on the passing of time, memories, and the inevitability of aging and death. A man takes his young son to a lake he used to visit as a child, only to realize that he has now taken his own father's place in the circle of life.</div>
+                <ul class="key-points">
+                    <li>A father returns to a peaceful childhood lake resort with his son.</li>
+                    <li>Everything looks and feels exactly the same, making him feel like he is still a boy.</li>
+                    <li>At the end, watching his son put on a cold swimsuit, he suddenly feels the "chill of death," realizing he is growing old.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>Time never stops moving. As we watch our children grow up, we must accept that we are aging and moving along the cycle of life. </div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">32</span>
+                <span class="lesson-title">The Hundredth Dove</span>
+                <span class="lesson-writer">Jane Yolen</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Jane Yolen is an acclaimed American author of fantasy, science fiction, and children's books. She is often called the "Hans Christian Andersen of America" for her beautiful fairy tales.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The story explores the tragic consequences of blind obedience and the conflict between love and duty. A loyal fowler (bird hunter) values his king's commands over his love for nature and his own wife, leading to an irreversible tragedy.</div>
+                <ul class="key-points">
+                    <li>Hugh is a master fowler who promises to catch 100 white doves for the King's wedding.</li>
+                    <li>He catches 99 doves easily, but the 100th dove keeps escaping and shows magical behavior.</li>
+                    <li>He finally traps the last dove, only to discover it was actually his own magical wife, who dies because of his actions.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Blindly following orders without using your heart can lead to total disaster. Love and family are more important than rigid duty.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">33</span>
+                <span class="lesson-title">The Lunatic</span>
+                <span class="lesson-writer">Laxmi Prasad Devkota</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Laxmi Prasad Devkota is the most celebrated writer in Nepali literature, honored with the title "Maha Kavi" (The Great Poet). He was known for his rapid, emotionally powerful writing.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The poem is a brilliant attack on a corrupt and backward society. The speaker accepts being called "crazy" (a lunatic) because he can see the cruel truths of the world, while the so-called "sane" leaders are actually blind to human suffering.</div>
+                <ul class="key-points">
+                    <li>The poet proudly admits he is mad because he sees the world differently.</li>
+                    <li>He laughs when people see a stone but calls out the cruelty of leaders who exploit the poor.</li>
+                    <li>The poem turns the tables, showing that a corrupt society is the one that is truly insane.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> A corrupt society that hurts the poor is truly insane. People who speak the truth are often called crazy by blind leaders.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- ART AND PHILOSOPHY (34-43) -->
+    <!-- ============================================================ -->
+    <div class="section-block">
+        <div class="section-title">🎨 Art and Philosophy <span>34-43</span></div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">34</span>
+                <span class="lesson-title">An Essay in Aesthetics</span>
+                <span class="lesson-writer">Roger Fry</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Roger Fry was an influential English art critic and painter. He was a key member of the famous Bloomsbury Group and helped introduce modern French art to the English public.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The essay explains the difference between real life and the world of art (imaginative life). In real life, we must act quickly to survive, but art allows us to sit back, look deeply, and experience pure emotions without needing to take any physical action.</div>
+                <ul class="key-points">
+                    <li>Real life requires quick, practical reactions for survival.</li>
+                    <li>Art triggers our "imaginative life," where we feel deep emotions safely.</li>
+                    <li>The main value of art is its formal beauty (shapes, colors), not just its moral message.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Real life forces us to react quickly to survive, but looking at art gives our minds a peaceful space to feel deep emotions safely.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">35</span>
+                <span class="lesson-title">The Clock Tower</span>
+                <span class="lesson-writer">Bhupi Sherchan</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Bhupi Sherchan was a highly celebrated modern Nepali poet. He is famous for writing sharp, realistic poems about social and political issues using direct, everyday language.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The poem uses an old clock tower (Ghantaghar) as a symbol of an old, retired person who has become completely useless to modern society. It shows the sadness of aging, loneliness, and watching the world move forward while you are stuck in one place.</div>
+                <ul class="key-points">
+                    <li>An old clock tower stands alone by a lake, watching time pass.</li>
+                    <li>It behaves like an old, retired army veteran who has nothing left to do.</li>
+                    <li>It simply counts the hours, feeling abandoned and forgotten by the busy city.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Aging can bring deep loneliness. Society often ignores old people once they can no longer work, which is a sad human reality.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">36</span>
+                <span class="lesson-title">Beauty</span>
+                <span class="lesson-writer">Susan Sontag</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Susan Sontag was an influential American essayist, novelist, and cultural critic. She was famous for writing about how media, photography, and modern culture change the way we think.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The text criticizes how modern society defines "beauty" unfairly based on gender. Society expects men to be judged by their actions, intelligence, and character, while women are heavily pressured to be judged only by their external looks, treating beauty like an obligation.</div>
+                <ul class="key-points">
+                    <li>Historically, beauty meant inward and outward perfection mixed together.</li>
+                    <li>Today, beauty is used as a narrow, superficial trap mostly aimed at women.</li>
+                    <li>The author argues that women should be valued for their full humanity, not just their looks.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Judging women only by their looks is a shallow trap. People should be valued for their full personality, intelligence, and actions.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">37</span>
+                <span class="lesson-title">From the Fountainhead to the Future</span>
+                <span class="lesson-writer">Alexandra York</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Alexandra York is an American author, journalist, and cultural commentator. She founded an educational foundation dedicated to promoting classic beauty and excellence in the arts.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The essay argues that art is a "shortcut to philosophy" because it instantly shows what a culture values. York strongly criticizes modern art for being ugly, confusing, and negative. She calls for a return to classic, positive art that celebrates human potential and beauty.</div>
+                <ul class="key-points">
+                    <li>Art directly reflects the deep philosophical health of a society.</li>
+                    <li>Modern and postmodern art are criticized for promoting ugliness and meaningless chaos.</li>
+                    <li>The future needs a cultural renaissance that focuses on romantic realism, structure, and hope.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Art shows what a society values deep down. We should support art that focuses on structure, hope, and real human potential.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">38</span>
+                <span class="lesson-title">The Panther</span>
+                <span class="lesson-writer">Rainer Maria Rilke</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Rainer Maria Rilke was a world-famous Austrian poet. He was a master of "thing-poems"—writings that describe physical objects or animals so deeply that they reveal hidden human emotions.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The poem describes a powerful panther locked inside a cage at a zoo. It serves as a tragic symbol of a great, free spirit that has lost its strength, freedom, and will to live due to long-term captivity and isolation.</div>
+                <ul class="key-points">
+                    <li>The panther paces in tiny circles behind thousands of iron bars.</li>
+                    <li>Its vision has grown tired and blurred from staring at the cage.</li>
+                    <li>Occasionally, a brief image enters its eye, but it dies out instantly inside its numb heart.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Living behind bars and losing your freedom breaks your spirit completely, making even the strongest creature go numb inside.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">39</span>
+                <span class="lesson-title">What I Think, What I Am</span>
+                <span class="lesson-writer">Edward Hoagland</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Edward Hoagland is a well-known American essayist and nature writer. He is highly praised for his personal, conversational essays that explore daily life, travel, and personal identity.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The text explores what it truly means to be an essayist. Hoagland explains that an essayist does not just state dry facts; they share their unique personality, opinions, and private thoughts, turning their mind into a landscape for the reader to explore.</div>
+                <ul class="key-points">
+                    <li>An essay is a personal journey, unlike a strict news report or short story.</li>
+                    <li>The writer's mind must be open, honest, and filled with a unique personal voice.</li>
+                    <li>Writing an essay is a way to discover and show who you truly are inside.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Personal writing is a great tool for self-discovery. Sharing your honest, unique opinions helps others see who you truly are.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">40</span>
+                <span class="lesson-title">All-Pervading Poetry</span>
+                <span class="lesson-writer">Balkrishna Sama</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Balkrishna Sama was one of Nepal's greatest dramatists and poets, honored with the title "Natya Shiromani" (Jewel of Drama). He brought deep philosophical and social ideas into Nepali literature.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The text argues that poetry is not just words written on a piece of paper. Poetry is "all-pervading," meaning it exists everywhere in nature—in the singing of birds, the blooming of flowers, flowing rivers, and human kindness.</div>
+                <ul class="key-points">
+                    <li>True poetry is an active, living force found throughout the natural universe.</li>
+                    <li>Words are just a tool used by poets to capture the silent beauty around us.</li>
+                    <li>Anyone who can feel love, empathy, and wonder can experience this universal poetry.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong>True poetry is not just printed words. It is a living beauty found all around us in nature, kindness, and human love. </div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">41</span>
+                <span class="lesson-title">The Allegory of the Cave</span>
+                <span class="lesson-writer">Plato</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Plato was an ancient Greek philosopher and one of the most important thinkers in human history. He was the student of Socrates and the teacher of Aristotle.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> This famous story uses a dark underground cave to show how ignorant human beings can be. People who only look at the material world are like prisoners staring at fake shadows on a wall, and true education means breaking free into the real light of truth and knowledge.</div>
+                <ul class="key-points">
+                    <li>Prisoners are chained in a cave, seeing only shadows and believing they are real.</li>
+                    <li>One prisoner escapes into the outside world and finally sees the true sun (truth).</li>
+                    <li>He returns to help the others, but they mock him because they are afraid of the real world.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> True education means stepping out of ignorance and comfort to find real truth, even if others mock you for seeing things differently.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">42</span>
+                <span class="lesson-title">Her First Ball</span>
+                <span class="lesson-writer">Katherine Mansfield</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> Katherine Mansfield was a famous short-story writer from New Zealand. She was a pioneer of modernism, focusing on her characters' inner feelings, sudden realizations, and moods.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The story captures a young girl's exciting transition from simple childhood into adult society. At her first dance party, she experiences immense joy, but a brief conversation with a cynical old man reminds her that youth is short and old age is coming.</div>
+                <ul class="key-points">
+                    <li>Leila is a country girl attending her very first exciting city dance ball.</li>
+                    <li>She feels pure happiness until an old partner tells her she will eventually grow old and ugly.</li>
+                    <li>She feels sad for a moment, but immediately returns to dancing, choosing to enjoy her youth.</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> Time flies and youth does not last forever. We should enjoy our happy moments completely without letting future worries ruin the present.</div>
+            </div>
+        </div>
+
+        <div class="lesson-card">
+            <div class="lesson-header">
+                <span class="lesson-number">43</span>
+                <span class="lesson-title">Not the Non-Existent</span>
+                <span class="lesson-writer">(Author not specified)</span>
+            </div>
+            <div class="lesson-body">
+                <div class="about-writer"><strong>About the Writer:</strong> The author is not specified because this is an ancient hymn called the Nasadiya Sukta from the Rig Veda (Mandala 10, Hymn 129). It is one of the oldest spiritual texts in human history.</div>
+                <div class="main-idea"><strong>Main Idea:</strong> The poem looks at the deep mystery of how the universe was created. It states that before the world began, there was neither life, death, existence, nor nothingness. It questions how creation started and suggests that even the gods might not know the final answer.</div>
+                <ul class="key-points">
+                    <li>In the beginning, there was total darkness, empty space, and no division of day or night.</li>
+                    <li>Creation began through a primal desire and the power of warmth or cosmic heat.</li>
+                    <li>The poem ends with a humble, philosophical question: Who truly knows where the universe came from?</li>
+                </ul>
+                <div class="moral"><strong>Moral:</strong> The origin of the universe is a deep, beautiful mystery. Human beings should remain humble because some secrets are beyond our knowledge.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        <span>📚 Complete lesson notes · All sections</span>
+        <span class="badge">43 lessons</span>
+    </div>
+
+</div>
+</body>
+</html>
